@@ -6,7 +6,7 @@ RUN dpkg --add-architecture i386 && apt-get update && apt-get install -y build-e
 
 ADD dummy /buildozer/dummy
 RUN chown -R buildozer:buildozer /buildozer/
-RUN pip install cython==0.25 buildozer pyOpenssl
+RUN pip install cython==0.28.1 buildozer pyOpenssl
 
 USER buildozer
 
